@@ -8,6 +8,6 @@
         <artifactId>sharding-sphere-quick-start</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-orchestration-example</artifactId>
+    <artifactId>sharding-transaction-quickstart</artifactId>
 
 </project>

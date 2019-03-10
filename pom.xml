@@ -7,12 +7,12 @@
     <artifactId>sharding-sphere-quick-start</artifactId>
     <version>4.0.0.M1-SNAPSHOT</version>
     <modules>
-        <module>sharding-jdbc-raw-example</module>
-        <module>sharding-orchestration-example</module>
-        <module>sharding-spring-namespace-example</module>
-        <module>sharding-spring-boot-example</module>
-        <module>sharding-transaction-example</module>
-        <module>example-common</module>
+        <module>sharding-jdbc-raw-quickstart</module>
+        <module>sharding-orchestration-quickstart</module>
+        <module>sharding-spring-namespace-quickstart</module>
+        <module>sharding-spring-boot-quickstart</module>
+        <module>sharding-transaction-quickstart</module>
+        <module>quickstart-common</module>
     </modules>
     <packaging>pom</packaging>
     
@@ -52,6 +52,7 @@
     
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
                 <artifactId>sharding-core</artifactId>
