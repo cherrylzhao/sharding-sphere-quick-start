@@ -5,15 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.shardingsphere</groupId>
-        <artifactId>sharding-sphere-quick-start</artifactId>
+        <artifactId>sharding-orchestration-zookeeper</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-orchestration</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>sharding-orchestration-etcd</module>
-        <module>sharding-orchestration-zookeeper</module>
-    </modules>
-
+    <artifactId>sharding-orchestration-zookeeper-spring-boot-quickstart</artifactId>
 </project>
