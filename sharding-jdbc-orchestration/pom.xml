@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>sharding-spring-namespace-jpa-quickstart</module>
-        <module>sharding-spring-namespace-mybatis-quickstart</module>
+        <module>sharding-jdbc-orchestration-zookeeper-quickstart</module>
+        <module>sharding-jdbc-orchestration-etcd-quickstart</module>
     </modules>
     <parent>
         <groupId>io.shardingsphere</groupId>
         <artifactId>sharding-sphere-quick-start</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-spring-namespace</artifactId>
+    <artifactId>sharding-jdbc-orchestration</artifactId>
 
 </project>

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.shardingsphere</groupId>
-        <artifactId>sharding-orchestration</artifactId>
+        <artifactId>sharding-jdbc-orchestration</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
     <artifactId>sharding-orchestration-etcd-quickstart</artifactId>
