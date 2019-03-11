@@ -16,6 +16,7 @@
         <module>quickstart-common-jpa</module>
         <module>quickstart-common-mybatis</module>
         <module>sharding-proxy</module>
+        <module>sharding-jdbc-hint-quickstart</module>
     </modules>
     <packaging>pom</packaging>
     
