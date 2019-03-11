@@ -8,5 +8,5 @@
         <artifactId>sharding-transaction-2pc-xa</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-transaction-xa-api-quickstart</artifactId>
+    <artifactId>sharding-transaction-xa-raw-jdbc-quickstart</artifactId>
 </project>

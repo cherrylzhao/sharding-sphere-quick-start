@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.shardingsphere</groupId>
-        <artifactId>sharding-jdbc-spring-boot</artifactId>
+        <artifactId>sharding-data-spring-boot</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
     <artifactId>sharding-jdbc-spring-boot-jpa-quickstart</artifactId>
@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>io.shardingsphere</groupId>
-            <artifactId>quickstart-common-jpa</artifactId>
+            <artifactId>repository-jpa</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

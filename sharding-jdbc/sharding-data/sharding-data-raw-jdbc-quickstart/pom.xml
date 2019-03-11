@@ -8,7 +8,7 @@
         <artifactId>sharding-sphere-quick-start</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-data-api-quickstart</artifactId>
+    <artifactId>sharding-data-raw-jdbc-quickstart</artifactId>
 
     <dependencies>
         <dependency>

@@ -9,6 +9,6 @@
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sharding-transaction-saga-api-quickstart</artifactId>
+    <artifactId>sharding-transaction-saga-raw-jdbc-quickstart</artifactId>
 
 </project>
