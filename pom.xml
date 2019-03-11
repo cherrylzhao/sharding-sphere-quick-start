@@ -7,17 +7,12 @@
     <artifactId>sharding-sphere-quick-start</artifactId>
     <version>4.0.0.M1-SNAPSHOT</version>
     <modules>
-        <module>sharding-jdbc-api-quickstart</module>
-        <module>sharding-jdbc-orchestration</module>
-        <module>sharding-jdbc-spring-namespace</module>
-        <module>sharding-jdbc-spring-boot</module>
-        <module>sharding-transaction</module>
-        <module>quickstart-common</module>
+        <module>quickstart-common-api</module>
         <module>quickstart-common-jpa</module>
         <module>quickstart-common-mybatis</module>
         <module>sharding-proxy</module>
-        <module>sharding-jdbc-hint-quickstart</module>
         <module>sharding-jdbc</module>
+        <module>quickstart-common</module>
     </modules>
     <packaging>pom</packaging>
     

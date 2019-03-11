@@ -12,7 +12,6 @@
 
     <modules>
         <module>sharding-jdbc-api-quickstart</module>
-        <module>sharding-jdbc-hint-quickstart</module>
         <module>sharding-jdbc-spring-boot</module>
         <module>sharding-jdbc-spring-namespace</module>
     </modules>
