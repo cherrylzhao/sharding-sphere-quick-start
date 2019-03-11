@@ -5,14 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.shardingsphere</groupId>
-        <artifactId>sharding-sphere-quick-start</artifactId>
+        <artifactId>sharding-jdbc</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-jdbc</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>sharding-data</artifactId>
 
     <modules>
-        <module>sharding-orchestration</module>
-        <module>sharding-data</module>
+        <module>sharding-jdbc-api-quickstart</module>
+        <module>sharding-jdbc-hint-quickstart</module>
+        <module>sharding-jdbc-spring-boot</module>
+        <module>sharding-jdbc-spring-namespace</module>
     </modules>
 </project>
