@@ -14,5 +14,6 @@
     <modules>
         <module>sharding-orchestration</module>
         <module>sharding-data</module>
+        <module>sharding-transaction</module>
     </modules>
 </project>
