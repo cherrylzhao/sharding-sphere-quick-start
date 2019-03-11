@@ -15,22 +15,12 @@
  * limitations under the License.
  */
 
-package io.shardingsphere.quickstart.jdbc.raw.algorithm;
+package io.shardingsphere.quickstart.config;
 
-import org.apache.shardingsphere.api.algorithm.sharding.standard.PreciseShardingAlgorithm;
-import org.apache.shardingsphere.api.algorithm.sharding.standard.PreciseShardingValue;
+import javax.sql.DataSource;
+import java.sql.SQLException;
 
-import java.util.Collection;
-
-public final class ModuloShardingDatabaseAlgorithm implements PreciseShardingAlgorithm<Integer> {
+public interface ExampleConfiguration {
     
-    @Override
-    public String doSharding(final Collection<String> databaseNames, final PreciseShardingValue<Integer> shardingValue) {
-        for (String each : databaseNames) {
-            if (each.endsWith(shardingValue.getValue() % 2 + "")) {
-                return each;
-            }
-        }
-        throw new UnsupportedOperationException();
-    }
+    DataSource getDataSource() throws SQLException;
 }

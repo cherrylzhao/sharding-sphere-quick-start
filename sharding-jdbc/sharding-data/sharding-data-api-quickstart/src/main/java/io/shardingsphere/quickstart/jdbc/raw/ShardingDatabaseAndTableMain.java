@@ -17,12 +17,12 @@
 
 package io.shardingsphere.quickstart.jdbc.raw;
 
+import io.shardingsphere.quickstart.algorithm.ModuloShardingTableAlgorithm;
 import io.shardingsphere.quickstart.common.DataSourceUtil;
+import io.shardingsphere.quickstart.common.jdbc.repository.OrderItemRepositoryImpl;
+import io.shardingsphere.quickstart.common.jdbc.repository.OrderRepositoryImpl;
+import io.shardingsphere.quickstart.common.jdbc.service.CommonServiceImpl;
 import io.shardingsphere.quickstart.common.service.CommonService;
-import io.shardingsphere.quickstart.jdbc.raw.algorithm.ModuloShardingTableAlgorithm;
-import io.shardingsphere.quickstart.jdbc.raw.repository.OrderItemRepositoryImpl;
-import io.shardingsphere.quickstart.jdbc.raw.repository.OrderRepositoryImpl;
-import io.shardingsphere.quickstart.jdbc.raw.service.CommonServiceImpl;
 import org.apache.shardingsphere.api.config.sharding.KeyGeneratorConfiguration;
 import org.apache.shardingsphere.api.config.sharding.ShardingRuleConfiguration;
 import org.apache.shardingsphere.api.config.sharding.TableRuleConfiguration;

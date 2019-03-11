@@ -15,6 +15,7 @@
         <module>repository-api</module>
         <module>repository-jpa</module>
         <module>repository-mybatis</module>
-        <module>common-utility</module>
+        <module>config-utility</module>
+        <module>repository-jdbc</module>
     </modules>
 </project>
