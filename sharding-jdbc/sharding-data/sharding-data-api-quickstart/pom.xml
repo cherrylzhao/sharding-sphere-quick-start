@@ -5,34 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.shardingsphere</groupId>
-        <artifactId>sharding-jdbc-spring-namespace</artifactId>
+        <artifactId>sharding-sphere-quick-start</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-spring-namespace-mybatis-quickstart</artifactId>
+    <artifactId>sharding-data-api-quickstart</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>io.shardingsphere</groupId>
-            <artifactId>quickstart-common-mybatis</artifactId>
+            <artifactId>quickstart-common</artifactId>
             <version>${project.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>sharding-jdbc-spring-namespace</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
+            <artifactId>sharding-jdbc-core</artifactId>
         </dependency>
     </dependencies>
+
 </project>

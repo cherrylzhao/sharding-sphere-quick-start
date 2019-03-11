@@ -11,8 +11,8 @@
     <artifactId>sharding-data</artifactId>
 
     <modules>
-        <module>sharding-jdbc-api-quickstart</module>
-        <module>sharding-jdbc-spring-boot</module>
-        <module>sharding-jdbc-spring-namespace</module>
+        <module>sharding-data-api-quickstart</module>
+        <module>sharding-data-spring-boot</module>
+        <module>sharding-data-spring-namespace</module>
     </modules>
 </project>
