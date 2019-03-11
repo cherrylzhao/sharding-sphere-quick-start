@@ -15,22 +15,22 @@
  * limitations under the License.
  */
 
-package io.shardingsphere.quickstart.algorithm;
+package io.shardingsphere.quickstart.common.jdbc.repository;
 
-import org.apache.shardingsphere.api.algorithm.sharding.standard.PreciseShardingAlgorithm;
-import org.apache.shardingsphere.api.algorithm.sharding.standard.PreciseShardingValue;
+import io.shardingsphere.quickstart.common.entity.Order;
 
-import java.util.Collection;
+import javax.sql.DataSource;
+import java.util.List;
 
-public final class ModuloShardingDatabaseAlgorithm implements PreciseShardingAlgorithm<Integer> {
+public final class RangeOrderRepositoryImpl extends OrderRepositoryImpl {
+    
+    public RangeOrderRepositoryImpl(final DataSource dataSource) {
+        super(dataSource);
+    }
     
     @Override
-    public String doSharding(final Collection<String> databaseNames, final PreciseShardingValue<Integer> shardingValue) {
-        for (String each : databaseNames) {
-            if (each.endsWith(shardingValue.getValue() % 2 + "")) {
-                return each;
-            }
-        }
-        throw new UnsupportedOperationException();
+    public List<Order> selectAll() {
+        String sql = "SELECT * FROM t_order WHERE order_id BETWEEN 200000000000000000 AND 400000000000000000";
+        return getOrders(sql);
     }
 }

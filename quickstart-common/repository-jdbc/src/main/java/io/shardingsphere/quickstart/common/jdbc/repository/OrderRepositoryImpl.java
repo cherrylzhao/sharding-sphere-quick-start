@@ -29,7 +29,7 @@ import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 
-public final class OrderRepositoryImpl implements OrderRepository {
+public class OrderRepositoryImpl implements OrderRepository {
     
     private final DataSource dataSource;
     
@@ -102,7 +102,7 @@ public final class OrderRepositoryImpl implements OrderRepository {
         return getOrders(sql);
     }
     
-    private List<Order> getOrders(final String sql) {
+    protected List<Order> getOrders(final String sql) {
         List<Order> result = new LinkedList<>();
         try (Connection connection = dataSource.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql);
