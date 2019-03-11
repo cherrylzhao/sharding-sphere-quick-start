@@ -8,10 +8,10 @@
     <version>4.0.0.M1-SNAPSHOT</version>
     <modules>
         <module>sharding-jdbc-raw-quickstart</module>
-        <module>sharding-orchestration-quickstart</module>
-        <module>sharding-spring-namespace-quickstart</module>
-        <module>sharding-spring-boot-quickstart</module>
-        <module>sharding-transaction-quickstart</module>
+        <module>sharding-orchestration</module>
+        <module>sharding-spring-namespace</module>
+        <module>sharding-spring-boot</module>
+        <module>sharding-transaction</module>
         <module>quickstart-common</module>
         <module>quickstart-common-jpa</module>
         <module>quickstart-common-mybatis</module>

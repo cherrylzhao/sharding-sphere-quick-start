@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.shardingsphere</groupId>
-        <artifactId>sharding-orchestration-quickstart</artifactId>
+        <artifactId>sharding-orchestration</artifactId>
         <version>4.0.0.M1-SNAPSHOT</version>
     </parent>
-    <artifactId>sharding-orchestration-etcd-quickstart</artifactId>
+    <artifactId>sharding-orchestration-zookeeper-quickstart</artifactId>
 
     <dependencies>
         <dependency>
@@ -22,13 +22,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>sharding-orchestration-reg-etcd</artifactId>
+            <artifactId>sharding-orchestration-reg-zookeeper-curator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
     </dependencies>
-
 </project>
-
