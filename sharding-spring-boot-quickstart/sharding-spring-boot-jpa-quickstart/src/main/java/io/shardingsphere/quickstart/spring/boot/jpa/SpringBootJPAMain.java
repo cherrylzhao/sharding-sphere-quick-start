@@ -15,28 +15,29 @@
  * limitations under the License.
  */
 
-package io.shardingsphere.quickstart.spring.boot.mybatis;
+package io.shardingsphere.quickstart.spring.boot.jpa;
 
-import io.shardingsphere.quickstart.common.mybatis.service.SpringPojoService;
-import io.shardingsphere.quickstart.common.service.CommonService;
-import org.mybatis.spring.annotation.MapperScan;
+import io.shardingsphere.quickstart.common.jpa.service.JPACommonService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("io.shardingsphere.quickstart.common.mybatis")
-@MapperScan(basePackages = "io.shardingsphere.quickstart.common.mybatis.repository")
+/*
+ * 1. Please make sure sharding-orchestration-reg-zookeeper-curator in your pom if registryCenterType = RegistryCenterType.ZOOKEEPER.
+ * 2. Please make sure sharding-orchestration-reg-etcd in your pom if registryCenterType = RegistryCenterType.ETCD.
+ */
+@ComponentScan("io.shardingsphere.quickstart.common.jpa")
+@EntityScan(basePackages = "io.shardingsphere.quickstart.common.jpa.entity")
 @SpringBootApplication(exclude = JtaAutoConfiguration.class)
-public class SpringBootMybatisMain {
+public class SpringBootJPAMain {
     
     public static void main(final String[] args) {
-        try (ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringBootMybatisMain.class, args)) {
-            CommonService commonService = applicationContext.getBean(SpringPojoService.class);
-            commonService.initEnvironment();
+        try (ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringBootJPAMain.class, args)) {
+            JPACommonService commonService = applicationContext.getBean(JPACommonService.class);
             commonService.processSuccess();
-            commonService.cleanEnvironment();
         }
     }
 }
