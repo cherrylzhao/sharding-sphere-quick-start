@@ -25,10 +25,6 @@ import org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfigurati
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-/*
- * 1. Please make sure sharding-orchestration-reg-zookeeper-curator in your pom if registryCenterType = RegistryCenterType.ZOOKEEPER.
- * 2. Please make sure sharding-orchestration-reg-etcd in your pom if registryCenterType = RegistryCenterType.ETCD.
- */
 @ComponentScan("io.shardingsphere.quickstart.common.jpa")
 @EntityScan(basePackages = "io.shardingsphere.quickstart.common.jpa.entity")
 @SpringBootApplication(exclude = JtaAutoConfiguration.class)
@@ -36,16 +32,8 @@ public class OrchestrationZookeeperMain {
     
     public static void main(final String[] args) {
         try (ConfigurableApplicationContext applicationContext = SpringApplication.run(OrchestrationZookeeperMain.class, args)) {
-            process(applicationContext);
+            JPACommonService commonService = applicationContext.getBean(JPACommonService.class);
+            commonService.processSuccess();
         }
-    }
-    
-    private static void process(final ConfigurableApplicationContext applicationContext) {
-        JPACommonService commonService = getCommonService(applicationContext);
-        commonService.processSuccess();
-    }
-    
-    private static JPACommonService getCommonService(final ConfigurableApplicationContext applicationContext) {
-        return applicationContext.getBean(JPACommonService.class);
     }
 }

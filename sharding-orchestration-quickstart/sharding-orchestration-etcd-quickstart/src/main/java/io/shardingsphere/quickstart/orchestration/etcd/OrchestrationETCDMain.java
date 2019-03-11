@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package io.shardingsphere.quickstart.spring.boot.jpa;
+package io.shardingsphere.quickstart.orchestration.etcd;
 
 import io.shardingsphere.quickstart.common.jpa.service.JPACommonService;
 import org.springframework.boot.SpringApplication;
@@ -28,10 +28,10 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("io.shardingsphere.quickstart.common.jpa")
 @EntityScan(basePackages = "io.shardingsphere.quickstart.common.jpa.entity")
 @SpringBootApplication(exclude = JtaAutoConfiguration.class)
-public class SpringBootJPAMain {
+public class OrchestrationETCDMain {
     
     public static void main(final String[] args) {
-        try (ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringBootJPAMain.class, args)) {
+        try (ConfigurableApplicationContext applicationContext = SpringApplication.run(OrchestrationETCDMain.class, args)) {
             JPACommonService commonService = applicationContext.getBean(JPACommonService.class);
             commonService.processSuccess();
         }
