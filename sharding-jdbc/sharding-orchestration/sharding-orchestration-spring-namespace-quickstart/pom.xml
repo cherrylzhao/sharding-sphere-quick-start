@@ -12,6 +12,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>io.shardingsphere</groupId>
+            <artifactId>config-utility</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.shardingsphere</groupId>
+            <artifactId>repository-mybatis</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>sharding-jdbc-spring-namespace</artifactId>
         </dependency>
@@ -35,11 +45,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.shardingsphere</groupId>
-            <artifactId>repository-mybatis</artifactId>
-            <version>${project.version}</version>
         </dependency>
 
         <dependency>
