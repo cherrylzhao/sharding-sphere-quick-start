@@ -12,7 +12,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>sharding-orchestration-etcd</module>
         <module>sharding-orchestration-raw-jdbc-quickstart</module>
         <module>sharding-orchestration-spring-boot-quickstart</module>
         <module>sharding-orchestration-spring-namespace-quickstart</module>
