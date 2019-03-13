@@ -18,6 +18,7 @@
 package io.shardingsphere.quickstart.orchestration.zookeeper.spring.namespace;
 
 import io.shardingsphere.quickstart.common.mybatis.service.SpringPojoService;
+import io.shardingsphere.quickstart.type.RegistryCenterType;
 import io.shardingsphere.quickstart.type.ShardingType;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -29,6 +30,9 @@ public class SpringNamespaceExample {
     
     private static boolean loadConfigFromRegCenter = false;
 //    private static boolean loadConfigFromRegCenter = true;
+    
+    private static RegistryCenterType registryCenterType = RegistryCenterType.ZOOKEEPER;
+//    private static RegistryCenterType registryCenterType = RegistryCenterType.ETCD;
     
     public static void main(final String[] args) {
         try (ConfigurableApplicationContext applicationContext = new ClassPathXmlApplicationContext(getApplicationFile())) {
@@ -42,9 +46,9 @@ public class SpringNamespaceExample {
     private static String getApplicationFile() {
         switch (shardingType) {
             case SHARDING_DATABASES_AND_TABLES:
-                return String.format("META-INF/%s/application-sharding-databases-tables.xml", loadConfigFromRegCenter ? "cloud" : "local");
+                return String.format("META-INF/%s/%s/application-sharding-databases-tables.xml", registryCenterType.name().toLowerCase(), loadConfigFromRegCenter ? "cloud" : "local");
             case MASTER_SLAVE:
-                return String.format("META-INF/%s/application-master-slave.xml", loadConfigFromRegCenter ? "cloud" : "local");
+                return String.format("META-INF/%s/%s/application-master-slave.xml", registryCenterType.name().toLowerCase(), loadConfigFromRegCenter ? "cloud" : "local");
             default:
                 throw new UnsupportedOperationException(shardingType.name());
         }

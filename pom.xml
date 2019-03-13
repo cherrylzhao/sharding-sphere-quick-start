@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.shardingsphere</groupId>
     <artifactId>sharding-sphere-quick-start</artifactId>
-    <version>4.0.0.M1-SNAPSHOT</version>
+    <version>4.0.0-RC2-SNAPSHOT</version>
     <modules>
         <module>quickstart-common</module>
         <module>sharding-jdbc</module>
@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.locale>zh_CN</project.build.locale>
         
-        <sharding-sphere.version>4.0.0.M1-SNAPSHOT</sharding-sphere.version>
+        <sharding-sphere.version>4.0.0-RC2-SNAPSHOT</sharding-sphere.version>
     
         <aspectjweaver.version>1.8.9</aspectjweaver.version>
         <spring-framework.version>4.3.20.RELEASE</spring-framework.version>
@@ -51,7 +51,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
-                <artifactId>sharding-core</artifactId>
+                <artifactId>sharding-core-api</artifactId>
                 <version>${sharding-sphere.version}</version>
             </dependency>
             <dependency>
